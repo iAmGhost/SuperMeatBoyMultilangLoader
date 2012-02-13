@@ -25,6 +25,14 @@ SMBPath=SuperMeatBoy.exe
 For choosing language, please see Support locales from upper side of this readme.
 (note: it's not case-sensitive.)
 
+If you want launch game directly from Steam, rename loader to SuperMeatBoy.exe, and rename original
+SuperMeatBoy.exe to SuperMeatBoy_.exe
+
+and create SuperMeatBoy.ini file with this content:
+[LoaderOptions]
+Language=DesiredLanguage
+SMBPath=SuperMeatBoy_.exe
+
 Used libraries:
 
 I have used some libraries from web, here is list(also commented on class files).
