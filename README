@@ -1,0 +1,33 @@
+Super Meat Boy Multi-Language Loader
+
+For unknown reason, locale of Super Meat Boy is limited in English, German, Russian, Spanish, Polish.
+Even worse, you can't select locale if game is non-Steam version (like SMB from Humble Bundle)
+
+With this application, you can choose all of locales from Super Meat Boy.
+
+Supported locales:
+Debug*, English, Japanese, German, French, Spanish, Italian, Korean, Chinese, Portuguese,
+Chinese-Fontonly**, Russian, Polish.
+
+*: It will print key of text.
+**: Seems it loads Chinese fonts but doesn't load texts.
+
+Usage:
+Launch exe file with parameter
+SuperMeatBoyMultilangLoader.exe --language=Korean --smbpath="SuperMeatBoy.exe"
+
+or create ini file that has same name as exe(SuperMeatBoyMultilangLoader.ini) with this content:
+
+[LoaderOptions]
+Language=Korean
+SMBPath=SuperMeatBoy.exe
+
+For choosing language, please see Support locales from upper side of this readme.
+(note: it's not case-sensitive.)
+
+Used libraries:
+
+I have used some libraries from web, here is list(also commented on class files).
+
+- cIni (http://www.aejw.com)
+- Memory and MemoryAPI class (http://forum.cheatengine.org/viewtopic.php?t=530207)
